@@ -1,0 +1,26 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: es
+      cluster-nodes: localhost:9300
+    mongodb:
+      database: admin
+      host: 192.168.0.131
+      username: root
+      password: 123456
+      port: 27017
+
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wujue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: admin
+mybatis-plus:
+
+  configuration:
+
+    # 是否将sql打印到控制面板(该配置会将sql语句和查询的结果都打印到控制台)
+
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
